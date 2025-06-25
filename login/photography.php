@@ -81,8 +81,7 @@
       <div class="h2 text-center p-2" style="color: white;">
         PHOTOGRAPHY
       </div>
-    <div class="container text-center my-5">
-    <h2 class="category-title">CATEGORIES</h2>
+
     <div class="row justify-content-center mt-4">
       <div class="col-12 col-md-4 mb-4">
         <a href="Paintings/index.php" class="category-link">
@@ -94,7 +93,7 @@
       </div>
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
-          <img src="../img/photo1.jpg" class="card-img-top" alt="photo 1">
+          <img src="../img/photo5.jpg" class="card-img-top" alt="photo 1">
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Xyza Cruz Bacani</h6>
@@ -105,7 +104,7 @@
 
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
-          <img src="../img/photo2.jpg" class="card-img-top" alt="photo 2">
+          <img src="../img/photo4.jpg" class="card-img-top" alt="photo 2">
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Ezra Acayan</h6>
@@ -127,7 +126,7 @@
 
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
-          <img src="../img/photo4.jpg" class="card-img-top" alt="photo 4">
+          <img src="../img/photo2.jpg" class="card-img-top" alt="photo 4">
           <div class="card-body">
            <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Manny Librodo</h6>
@@ -138,7 +137,7 @@
 
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
-          <img src="../img/photo5.jpg" class="card-img-top" alt="photo 5">
+          <img src="../img/photo1.jpg" class="card-img-top" alt="photo 5">
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Bj Pascual</h6>
