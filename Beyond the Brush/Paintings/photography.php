@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-    background-image: url('bg2.jpg');
+    background-image: url('../../bg2.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -90,7 +90,7 @@
 
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
-          <img src="img/photo1.jpg" class="card-img-top" alt="photo 1">
+          <img src="../../img/photo1.jpg" class="card-img-top" alt="photo 1">
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Xyza Cruz Bacani</h6>
@@ -101,7 +101,7 @@
 
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
-          <img src="img/photo2.jpg" class="card-img-top" alt="photo 2">
+          <img src="../../img/photo2.jpg" class="card-img-top" alt="photo 2">
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Ezra Acayan</h6>
@@ -112,7 +112,7 @@
    
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
-          <img src="img/photo3.jpg" class="card-img-top" alt="photo 3">
+          <img src="../../img/photo3.jpg" class="card-img-top" alt="photo 3">
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Shaira Luna</h6>
@@ -123,7 +123,7 @@
 
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
-          <img src="img/photo5.jpg" class="card-img-top" alt="photo 4">
+          <img src="../../img/photo5.jpg" class="card-img-top" alt="photo 4">
           <div class="card-body">
            <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Manny Librodo</h6>
@@ -134,7 +134,7 @@
 
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
-          <img src="img/art5.jpg" class="card-img-top" alt="photo 5">
+          <img src="../../img/art5.jpg" class="card-img-top" alt="photo 5">
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Bj Pascual</h6>

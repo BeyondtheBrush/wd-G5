@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css"> <!-- Link to your custom CSS -->
   <style>
     body {
-      background-image: url('img/bg art.jpg'); /* Change this path if needed */
+      background-image: url('../../img/bg art.jpg'); /* Change this path if needed */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -41,10 +41,10 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
         <div class="art-card text-center">
-          <h2 class="mb-4">Granadean Arabesque</h2>
-          <img src="img/art2.jpg" alt="Spoliarium" class="art-img">
+          <h2 class="mb-4">Bayanihan</h2>
+          <img src="../../img/art5.jpg" alt="Spoliarium" class="art-img">
           <p>
-           The “Granadean Arabesque,” is a staple of the Philippine art world, created by the well-known Filipino painter and Artist Jose Joya.
+          Bayanihan by Carlos “Botong” Francisco exemplifies one of the famous cultures in the Philippines which is Bayanihan that has a root word of “Bayani” which simply means “Hero”. With this, this painting shows a hero to one another. During early times, people would carry houses to change places to relocate a neighbor because of a natural calamity or simply to move places. According to Pinoy Art Hub (2018), this is done by gathering enough people from the same neighborhood to carry a Bahay Kubo or a nipa hut.
           </p>
           <a href="index.php" class="btn btn-light btn-back">← Back to Gallery</a>
         </div>

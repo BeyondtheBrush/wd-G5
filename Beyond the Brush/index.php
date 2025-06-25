@@ -1,86 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Beyond the Brush</title>
-  <link rel="icon" href="img/icon btb.jpg" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/icon btb.jpg" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-image: url('img/bg art.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .category-title {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .category-link {
+      text-decoration: none;
+    }
+
+    .category-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+      height: 100%;
+    }
+
+    .category-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .category-card.active {
+      border: 2px solidrgb(255, 255, 255);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .category-card h5 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: white;
+      margin-top: 15px;
+    }
+
+    .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Beyond the Brush</a>
-  </div>
-</nav>
-
-
-  <div class="container py-5">
-    <div class="row justify-content-center">
+  <div class="container text-center my-5">
+    <h2 class="category-title">CATEGORIES</h2>
+    <div class="row justify-content-center mt-4">
       <div class="col-12 col-md-4 mb-4">
-        <div class="card h-100 text-center">
-          <img src="img/art1.jpg" class="card-img-top" alt="Art 1">
-          <div class="card-body">
-            <h5 class="card-title">Spoliarium</h5>
-            <a href="Spoliarium.php" class="btn btn-primary btn-view">VIEW</a>
+        <a href="Paintings/index.php" class="category-link">
+          <div class="category-card">
+            <img src="img/Paintings.jpg" class="img-fluid rounded" alt="Paintings">
+            <h5>Paintings</h5>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="col-12 col-md-4 mb-4">
-        <div class="card h-100 text-center">
-          <img src="img/art2.jpg" class="card-img-top" alt="Art 2">
-          <div class="card-body">
-            <h5 class="card-title">Granadean Arabesque</h5>
-            <a href="Granadean Arabesque.php" class="btn btn-primary btn-view">VIEW</a>
+        <a href="photography.html" class="category-link">
+          <div class="category-card active">
+            <img src="img/Photography.jpg" class="img-fluid rounded" alt="Photography">
+            <h5>Photography</h5>
           </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4 mb-4">
-        <div class="card h-100 text-center">
-          <img src="img/art3.jpg" class="card-img-top" alt="Art 3">
-          <div class="card-body">
-            <h5 class="card-title">Las Virgenes Cristianas Expuestas al Populacho</h5>
-            <a href="Las Virgenes Cristianas Expuestas al Populacho.php" class="btn btn-primary btn-view">VIEW</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4 mb-4">
-        <div class="card h-100 text-center">
-          <img src="img/art4.jpg" class="card-img-top" alt="Art 4">
-          <div class="card-body">
-            <h5 class="card-title">The Blood Compact</h5>
-            <a href="The Blood Compact.php" class="btn btn-primary btn-view">VIEW</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4 mb-4">
-        <div class="card h-100 text-center">
-          <img src="img/art5.jpg" class="card-img-top" alt="Art 5">
-          <div class="card-body">
-            <h5 class="card-title">Bayanihan</h5>
-            <a href="Bayanihan.php" class="btn btn-primary btn-view">VIEW</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-4 mb-4">
-        <div class="card h-100 text-center">
-          <img src="img/art6.jpg" class="card-img-top" alt="Art 6">
-          <div class="card-body">
-            <h5 class="card-title">Planting Rice</h5>
-            <a href="Planting Rice.php" class="btn btn-primary btn-view">VIEW</a>
-          </div>
-        </div>
+        </a>
       </div>
 
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

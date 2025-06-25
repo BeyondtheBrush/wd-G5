@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css"> <!-- Link to your custom CSS -->
   <style>
     body {
-      background-image: url('img/bg art.jpg'); /* Change this path if needed */
+      background-image: url('../../img/bg art.jpg'); /* Change this path if needed */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -41,10 +41,10 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
         <div class="art-card text-center">
-          <h2 class="mb-4">Spoliarium</h2>
-          <img src="img/art1.jpg" alt="Spoliarium" class="art-img">
+          <h2 class="mb-4">The Blood Compact</h2>
+          <img src="../../img/art4.jpg" alt="Spoliarium" class="art-img">
           <p>
-           The Spoliarium is a painting by Filipino painter Juan Luna. Luna, working on canvas, spent eight months completing the painting which depicts dying gladiators. The painting was submitted by Luna to the Exposición Nacional de Bellas Artes in 1884 in Madrid, where it garnered the first gold medal.
+           The Blood Compact is an “historic and historical” painting by Filipino painter Juan Luna. The scene painted by the artist portrays the 1565 Sandugo (blood compact ritual) between Datu Sikatuna of Bohol and Miguel López de Legazpi, surrounded by other conquistadores. Datu Sikatuna was described to be ‘being crowded out of the picture by Miguel López de Legazpi and his fellow conquistadores’. This is one of the last paintings created by Luna.
           </p>
           <a href="index.php" class="btn btn-light btn-back">← Back to Gallery</a>
         </div>

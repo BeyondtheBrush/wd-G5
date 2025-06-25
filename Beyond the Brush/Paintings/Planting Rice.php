@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css"> <!-- Link to your custom CSS -->
   <style>
     body {
-      background-image: url('img/bg art.jpg'); /* Change this path if needed */
+      background-image: url('../../img/bg art.jpg'); /* Change this path if needed */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -41,10 +41,10 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
         <div class="art-card text-center">
-          <h2 class="mb-4">Las Virgenes Cristianas Expuestas al Populacho</h2>
-          <img src="img/art3.jpg" alt="Spoliarium" class="art-img">
+          <h2 class="mb-4">Planting Rice</h2>
+          <img src="../../img/art6.jpg" alt="Spoliarium" class="art-img">
           <p>
-           Las Virgenes Cristianas Expuestas al Populacho or The Christian Virgins Exposed to the Populace is a famous 1884 history painting by Filipino painter, reformist, and propagandist Félix Resurrección Hidalgo
+           "Planting Rice" is a famous oil painting by Filipino artist Fernando Amorsolo, known for his idyllic and realistic depictions of Philippine rural life. The painting typically features farmers, often working together, planting rice in a sun-drenched field, sometimes with Mount Mayon in the background.
           </p>
           <a href="index.php" class="btn btn-light btn-back">← Back to Gallery</a>
         </div>
