@@ -82,15 +82,6 @@
         PHOTOGRAPHY
       </div>
 
-    <div class="row justify-content-center mt-4">
-      <div class="col-12 col-md-4 mb-4">
-        <a href="Paintings/index.php" class="category-link">
-          <div class="category-card">
-            <img src="img/Paintings.jpg" class="img-fluid rounded" alt="Paintings">
-            <h5>Paintings</h5>
-          </div>
-        </a>
-      </div>
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
           <img src="../img/photo5.jpg" class="card-img-top" alt="photo 1">
