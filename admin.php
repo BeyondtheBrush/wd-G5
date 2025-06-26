@@ -1,129 +1,108 @@
 <?php
+
 session_start();
-if (!isset($_SESSION['username'])) {
-    header('Location: login.php');
-    exit;
-}
-?>
-
-<?php
-require 'config.php';
-
-if (!isset($_SESSION['username']) || $_SESSION['username'] !== 'admin') {
-    header('Location: login.php');
-    exit;
-}
-
-$page = $_GET['page'] ?? 'dashboard';
-$users = ($page === 'users') ? $pdo->query('SELECT id, username FROM users ORDER BY id')->fetchAll() : [];
-$paintings = ($page === 'paintings') ? $pdo->query('SELECT id, title, artist FROM paintings WHERE title NOT IN ("navbar", "painting") ORDER BY id')->fetchAll() : [];
+include("connect.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admin – Beyond the Brush</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Login Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-    html, body { height: 100%; margin: 0; }
-    body { display: flex; font-family: system-ui, Arial, sans-serif; }
-    .sidebar {
-      width: 260px; background: #0b1a2d; color: #fff;
-      display: flex; flex-direction: column; padding: 2rem 1rem 1rem;
-    }
-    .sidebar h3 { font-size: 1.35rem; margin-bottom: 2rem; }
-    .nav-link {
-      color: #fff; display: flex; align-items: center; gap: .6rem;
-      padding: .55rem .9rem; border-radius: 6px; text-decoration: none;
-    }
-    .nav-link:hover { background: #112446; color: #fff; }
-    .nav-link.active { background: #112446; }
-
-    .content { flex: 1; display: flex; flex-direction: column; background: #f3f4f6; }
-    .topbar {
-      height: 56px; background: #fff;
-      display: flex; justify-content: flex-end; align-items: center;
-      padding: 0 1rem; box-shadow: 0 1px 2px rgba(0,0,0,.06);
-    }
-    .btn-logout {
-      border: 1px solid #ccc; border-radius: 6px;
-      padding: .35rem 1.2rem; font-size: .9rem; background: #fff; color: #333;
-      text-decoration: none;
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('../img/b.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      position: relative;
     }
 
-    .main { flex: 1; overflow-y: auto; padding: 2rem; }
-
-    .welcome-card {
-      background: #fff; border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,.08);
-      max-width: 950px; margin: 0 auto; padding: 3rem; text-align: center;
+    .alert-position {
+      position: absolute;
+      top: 20px;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
 
-    table {
-      background: #fff; border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,.05);
+    .login-box {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 8%;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 300px;
     }
-    th, td { padding: .65rem 1rem; }
+
+    input.form-control {
+      width: 200px;
+      margin: 0 auto;
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.25);
+      border: 1px solid #ccc;
+      border-radius: 35px;
+      padding: 10px;
+    }
+
+    .login-box h3 {
+      font-weight: 500;
+      margin-bottom: 25px;
+      text-align: center;
+      color: #333;
+    }
+
+    .btn-primary {
+      border-radius: 20px;
+      width: 100px;
+      background-color: #0069d9;
+      border-color: #0062cc;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
+
 <body>
 
-  <aside class="sidebar">
-    <h3>Beyond The Brush</h3>
-    <a class="nav-link <?= $page === 'dashboard' ? 'active' : '' ?>" href="admin.php?page=dashboard">Dashboard</a>
-    <a class="nav-link <?= $page === 'paintings' ? 'active' : '' ?>" href="admin.php?page=paintings">Manage Paintings</a>
-    <a class="nav-link <?= $page === 'users' ? 'active' : '' ?>" href="admin.php?page=users">Users</a>
-    <a class="nav-link" href="logout.php">Logout</a>
-  </aside>
-
-  <section class="content">
-    <div class="topbar">
-      <a href="logout.php" class="btn btn-logout">Logout</a>
+  <?php if (!empty($error)): ?>
+    <div class="alert-position">
+      <div class="alert alert-danger text-center w-auto px-4 py-2 shadow-sm">
+        <?= htmlspecialchars($error) ?>
+      </div>
     </div>
+  <?php endif; ?>
 
-    <div class="main">
-      <?php if ($page === 'dashboard'): ?>
-        <div class="welcome-card">
-          <h1>Welcome, Admin</h1>
-          <p class="lead">Manage your gallery, users, and everything in between — all in one place.</p>
-          <hr />
-          <p>Beyond the Brush empowers you to celebrate Filipino culture through powerful artworks. Dive in and keep the stories alive!</p>
-        </div>
+  <div class="login-box">
+    <h3><i class="bi bi-person-circle me-2"></i>Login</h3>
+    <form method="post">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <div class="text-center mt-3">
+        <button type="submit" class="btn btn-primary shadow-sm" name="login">Login</button>
+      </div>
+    </form>
+  </div>
 
-      <?php elseif ($page === 'users'): ?>
-        <h2 class="mb-4">User Accounts</h2>
-        <table class="table table-striped">
-          <thead class="table-dark">
-            <tr><th>ID</th><th>Username</th></tr>
-          </thead>
-          <tbody>
-            <?php foreach ($users as $u): ?>
-              <tr><td><?= $u['id'] ?></td><td><?= htmlspecialchars($u['username']) ?></td></tr>
-            <?php endforeach; ?>
-          </tbody>
-        </table>
-
-      <?php elseif ($page === 'paintings'): ?>
-        <h2 class="mb-4">Paintings</h2>
-        <table class="table table-striped">
-          <thead class="table-dark">
-            <tr><th>ID</th><th>Title</th><th>Artist</th></tr>
-          </thead>
-          <tbody>
-            <?php foreach ($paintings as $p): ?>
-              <tr>
-                <td><?= $p['id'] ?></td>
-                <td><?= htmlspecialchars($p['title']) ?></td>
-                <td><?= htmlspecialchars($p['artist']) ?></td>
-              </tr>
-            <?php endforeach; ?>
-          </tbody>
-        </table>
-      <?php endif; ?>
-    </div>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
