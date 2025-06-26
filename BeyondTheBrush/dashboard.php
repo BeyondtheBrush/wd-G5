@@ -95,7 +95,7 @@
 
     .welcome-card p {
       color: #495057;
-    }
+    } 
 
     @media (max-width: 768px) {
       #sidebar-wrapper {
@@ -110,7 +110,7 @@
 <body>
 
   <div id="wrapper">
-    <!-- Sidebar -->
+    
     <div id="sidebar-wrapper">
       <div class="sidebar-heading">🖼️ Painting Admin</div>
       <div class="list-group list-group-flush">
@@ -121,7 +121,7 @@
       </div>
     </div>
 
-    <!-- Page Content -->
+    
     <div id="page-content-wrapper">
       <nav class="navbar px-4">
         <div class="ms-auto">
