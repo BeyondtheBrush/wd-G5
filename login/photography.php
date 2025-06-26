@@ -67,7 +67,7 @@
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Xyza Cruz Bacani</h6>
-            <a href="xyza.php" class="btn btn-primary btn-view">VIEW</a>
+            <a href="viewphoto/xyza.php" class="btn btn-primary btn-view">VIEW</a>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Ezra Acayan</h6>
-            <a href="ezra.php" class="btn btn-primary btn-view">VIEW</a>
+            <a href="viewphoto/ezra.php" class="btn btn-primary btn-view">VIEW</a>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Shaira Luna</h6>
-            <a href="shaira.php" class="btn btn-primary btn-view">VIEW</a>
+            <a href="viewphoto/shaira.php" class="btn btn-primary btn-view">VIEW</a>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
           <div class="card-body">
            <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Manny Librodo</h6>
-            <a href="manny.php" class="btn btn-primary btn-view">VIEW</a>
+            <a href="viewphoto/manny.php" class="btn btn-primary btn-view">VIEW</a>
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@
           <div class="card-body">
             <p class="mb-1" style="font-size: 14px;">photo by</p>
             <h6 style="margin-bottom: 15px; font-weight: bold;">Bj Pascual</h6>
-            <a href="bj.php" class="btn btn-primary btn-view">VIEW</a>
+            <a href="viewphoto/bj.php" class="btn btn-primary btn-view">VIEW</a>
           </div>
         </div>
       </div>

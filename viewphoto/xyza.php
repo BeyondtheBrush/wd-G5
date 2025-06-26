@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-image: url('.../img//bg2.jpg');
+            background-image: url('.../img/bg2.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
