@@ -17,7 +17,7 @@ include('navbar.php');
     }
 
     body {
-      background: url('bg home.jpg') no-repeat center center fixed;
+      background: url('../img/bg\ home.jpg') no-repeat center center fixed;
       background-size: cover;
       font-family: Georgia, serif;
       margin: 0;
@@ -143,6 +143,8 @@ include('navbar.php');
       color: #f8c291;
     }
   </style>
+  <img src=".jpg" alt="Logo">
+
 </head>
 
 <body>
@@ -153,22 +155,17 @@ include('navbar.php');
     </div>
     <div class="d-grid gap-3 col-8 col-md-6 mt-3">
       <a href="#categories-section" class="btn btn-custom">Filipino Historical & Cultural Artworks</a>
-
     </div>
   </div>
 
   <section id="categories-section" style="margin-top: 80px;" class="d-flex flex-column align-items-center justify-content-center text-center py-5">
     <h2 class="mb-4" style="color: white; font-size: 2rem;">Categories</h2>
-    <div class="d-flex flex-wrap justify-content-center gap-4">
-      <a href="photography.php" class="text-decoration-none">
-        <div class="category-card">
-          <img src="Photography.jpg" alt="Photography">
-          <h5>Photography</h5>
+    
         </div>
       </a>
       <a href="painting.php" class="text-decoration-none">
         <div class="category-card">
-          <img src="Paintings.jpg" alt="Paintings">
+          <img src="../img/Paintings.jpg" alt="Paintings">
           <h5>Paintings</h5>
         </div>
       </a>
@@ -176,12 +173,14 @@ include('navbar.php');
   </section>
 
   <section id="about">
-    <button class="close-btn" onclick="hideAbout()">×</button>
-    <div class="container">
-      <h2>About This Project</h2>
-      <p>This website shows some examples of Filipino historical and cultural artworks. Thank you for visiting!</p>
-    </div>
-  </section>
+  <button class="close-btn" onclick="hideAbout()">×</button>
+  <div class="container">
+    <h2>About This Project</h2>
+    <p>This website shows some examples of Filipino historical and cultural artworks. Thank you for visiting!</p>
+    
+    <a href="admin.php" class="btn btn-custom mt-3">Go to Admin</a>
+  </div>
+</section>
 
   <section id="help">
     <button class="close-btn" onclick="hideHelp()">×</button>

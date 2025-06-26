@@ -2,7 +2,7 @@
   <div class="container-fluid">
     
     <div class="navbar-brand">
-      <img src="logo home.png" alt="Logo" height="30">
+      <img src="../img/logo home.png" alt="Logo" height="30">
     </div>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

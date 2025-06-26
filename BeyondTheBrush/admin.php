@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     body {
       margin: 0;
       padding: 0;
-      background: url('b.jpg') no-repeat center center;
+      background: url('../img/b.jpg') no-repeat center center;
       background-size: cover;
       height: 100vh;
       display: flex;

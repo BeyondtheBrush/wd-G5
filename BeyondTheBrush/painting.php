@@ -73,7 +73,7 @@
       </div>
     </div>
   </div>
-  <a href="dashboard.php" class="btn btn-light back-fixed">Back</a>
+  <a href="index.php" class="btn btn-light back-fixed">Back</a>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
