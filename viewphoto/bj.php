@@ -49,7 +49,7 @@
                         Bj Pascual is one of Manila's biggest names. He's the city's go-to celebrity fashion photographer whose
                         work has featured on countless magazine covers (including this one), high profile advertising
                         campaigns and popular pan-continental TV show, Asia's Next Top Model.</p>
-                    <a href="photography.php" class="btn btn-light btn-back">← Back to Gallery</a>
+                    <a href="../login/photography.php" class="btn btn-light btn-back">← Back to Gallery</a>
                 </div>
             </div>
         </div>

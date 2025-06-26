@@ -50,7 +50,7 @@ You sent
                     <p>
                         Shaira Luna is a professional fashion and advertising photographer. Her photos outside of the commercial stuff
                         are heavily inspired by decades past.</p>
-                    <a href="photography.php" class="btn btn-light btn-back">← Back to Gallery</a>
+                    <a href="../login/photography.php" class="btn btn-light btn-back">← Back to Gallery</a>
                 </div>
             </div>
         </div>

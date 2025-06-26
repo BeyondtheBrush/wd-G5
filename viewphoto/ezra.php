@@ -50,7 +50,7 @@
                         issues and human rights. Currently, he is working on a documentary reportage on the suffering and abuse experienced by
                         communities under the Philippine government's war on drugs.
                     </p>
-                    <a href="photography.php" class="btn btn-light btn-back">← Back to Gallery</a>
+                    <a href="../login/photography.php" class="btn btn-light btn-back">← Back to Gallery</a>
                 </div>
             </div>
         </div>

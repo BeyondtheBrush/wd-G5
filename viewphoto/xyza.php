@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-image: url('../img/bg2.jpg');
+            background-image: url('.../img//bg2.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
@@ -44,13 +44,13 @@
                 <div class="art-card text-center">
                     <h2 class="mb-4">Photography by Xyza Cruz Bacani
                     </h2>
-                    <img src="../img/photo5.jpg" alt="photo by xyza" class="art-img">
+                    <img src=".../img/photo5.jpg" alt="photo by xyza" class="art-img">
                     <p>
                         Xyza Cruz Bacani is a Filipina Street and Documentary Photographer based in Hong Kong. Having
                         worked as a
                         second-generation migrant domestic worker in the city, she used photography to raise awareness
                         about under-reported stories, focusing on the intersections of labour and human rights</p>
-                    <a href="photography.php" class="btn btn-light btn-back">← Back to Gallery</a>
+                    <a href=".../login/photography.php" class="btn btn-light btn-back">← Back to Gallery</a>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-image: url('bg2.jpg');
+            background-image: url('../img/bg2.jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
@@ -44,14 +44,14 @@
                 <div class="art-card text-center">
                     <h2 class="mb-4">Photography by Manny Librodo
                     </h2>
-                    <img src="photo2.jpg" alt="photo by manny" class="art-img">
+                    <img src="../img/photo2.jpg" alt="photo by manny" class="art-img">
                     <p>
                         Manny Librodo is a highly decorated photographer. Specialising in travel and people, glamour and
                         fashion
                         photography, his popularity among photographers and photography fans is evident through more
                         than 27 million hits in his Pbase account alone</p>
 
-                    <a href="photography.html" class="btn btn-light btn-back">← Back to Gallery</a>
+                    <a href="../login/photography.php" class="btn btn-light btn-back">← Back to Gallery</a>
                 </div>
             </div>
         </div>
