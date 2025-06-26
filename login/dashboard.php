@@ -4,181 +4,212 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beyond the Brush</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+  <title>Beyond the Brush - Art Gallery Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Risque&display=swap" rel="stylesheet">
 
-    body {
-      background: url('bg home.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Georgia', serif;
-      margin: 0;
-      padding: 0;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+<style>
+html {
+scroll-behavior: smooth;
+}
 
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: black;
-      padding: 10px 20px;
-      z-index: 1000;
-    }
+body {
+background: url('bg home.jpg') no-repeat center center fixed;
+background-size: cover;
+font-family: Georgia, serif;
+margin: 0;
+padding: 0;
+color: #fff;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
 
-    .navbar-nav .nav-link {
-      color: white;
-      font-weight: 500;
-      margin-left: 20px;
-      cursor: pointer;
-    }
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+background-color: black;
+padding: 10px 20px;
+z-index: 1000;
+}
 
-    .container-content {
-      padding-top: 100px;
-      flex: 1;
-    }
+.navbar-nav .nav-link {
+color: white;
+font-weight: 500;
+margin-left: 20px;
+cursor: pointer;
+}
 
-    h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
+.container-content {
+ padding-top: 100px;
+ flex: 1;
+ }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
+h1 {
+  font-family: 'Risque';
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
 
-    .btn-custom {
-      background-color: #4e4035;
-      border: none;
-      padding: 12px 24px;
-      font-size: 1rem;
-      color: white;
-      border-radius: 10px;
-    }
+p {
+font-size: 1.1rem;
+margin-bottom: 25px;
+ }
 
-    .btn-custom:hover {
-      background-color: #6b5649;
-    }
+.btn-custom {
+background-color: #4e4035;
+border: none;
+padding: 10px 22px;
+font-size: 1rem;
+color: white;
+border-radius: 10px;
+}
 
-    #about, #help {
-      display: none;
-      padding: 80px 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      margin-top: 50px;
-      position: relative;
-      text-align: center;
-    }
+.btn-custom:hover {
+background-color: #6b5649;
+}
 
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      background: none;
-      border: none;
-      color: white;
-      font-size: 2rem;
-      cursor: pointer;
-    }
+.category-card {
+background-color: rgba(255, 255, 255, 0.1);
+padding: 20px;
+border-radius: 15px;
+transition: transform 0.3s ease;
+border: 2px solid white;
+max-width: 300px;
+width: 100%;
+}
 
-    .close-btn:hover {
-      color: red;
-    }
+.category-card:hover {
+transform: scale(1.03);
+}
 
-    #about .container, #help .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+.category-card img {
+width: 100%;
+border-radius: 10px;
+}
 
-    #about p, #help p, #help ul {
-      max-width: 800px;
-      text-align: left;
-    }
+.category-card h5 {
+color: white;
+font-size: 1.2rem;
+margin-top: 15px;
+}
 
-    #help ul {
-      padding-left: 0;
-      list-style: none;
-    }
+#about,
+#help {
+display: none;
+padding: 70px 20px;
+background-color: rgba(0, 0, 0, 0.7);
+color: white;
+margin-top: 40px;
+text-align: center;
+}
 
-    #help ul li::before {
-      content: "• ";
-      color: #f8c291;
+.close-btn {
+position: absolute;
+top: 10px;
+right: 20px;
+background: none;
+border: none;
+color: white;
+font-size: 2rem;
+cursor: pointer;
+}
+
+.close-btn:hover {
+color: red;
+}
+
+#about .container,
+#help .container {
+max-width: 800px;
+margin: auto;
+}
+
+#help ul {
+list-style: none;
+padding-left: 0;
+}
+
+#help ul li::before {
+content: "• ";
+color: #f8c291;
     }
   </style>
 </head>
 
 <body>
 
-
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="logo home.png" alt="Logo" height="30">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" onclick="goHome()">Home</a></li>
           <li class="nav-item"><a class="nav-link" onclick="showHelp()">Help</a></li>
-          <li class="nav-item"><a class="nav-link" onclick="showAbout()">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" onclick="showAbout()">About</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-
-  <div class="container container-content d-flex flex-column align-items-center justify-content-center text-center" id="home-section" style="min-height: 70vh;">
+  <div class="container container-content d-flex flex-column align-items-center justify-content-center text-center" id="home-section">
     <div>
       <h1>SIMPLY ART. SIMPLY BEAUTIFUL</h1>
       <p>"Seventeen years of colors, stories, and inspiration. Start your art journey today."</p>
     </div>
-    <div class="d-grid gap-3 col-8 col-md-6 mt-4">
-      <a href="#" class="btn btn-custom">Filipino Historical & Cultural Artworks</a>
-      <a href="#" class="btn btn-custom">Categories</a>
+    <div class="d-grid gap-3 col-8 col-md-6 mt-3">
+      <a href="#categories-section" class="btn btn-custom">Filipino Historical & Cultural Artworks</a>
+      <a href="#categories-section" class="btn btn-custom">Categories</a>
     </div>
   </div>
 
-  
+  <section id="categories-section" class="d-flex flex-column align-items-center justify-content-center text-center py-5">
+    <h2 class="mb-4" style="color: white; font-size: 2rem;">Categories</h2>
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+      <a href="photography.html" class="text-decoration-none">
+        <div class="category-card">
+          <img src="Photography.jpg" alt="Photography">
+          <h5>Photography</h5>
+        </div>
+      </a>
+      <a href="paintings.html" class="text-decoration-none">
+        <div class="category-card">
+          <img src="Paintings.jpg" alt="Paintings">
+          <h5>Paintings</h5>
+        </div>
+      </a>
+    </div>
+  </section>
+
   <section id="about">
     <button class="close-btn" onclick="hideAbout()">×</button>
     <div class="container">
-      <h2>About Us</h2>
-      <p>
-        Beyond the Brush is a digital gallery committed to showcasing Filipino historical and cultural masterpieces.
-        Our mission is to preserve and celebrate the legacy of our national identity through art.
-        Whether you're a student, teacher, enthusiast, or simply curious, we invite you to explore the colorful stories behind every stroke.
-      </p>
+      <h2>About This Project</h2>
+      <p>This website some examples of Filipino historical and cultural artworks.Thank you for visiting!</p>
     </div>
   </section>
 
- 
   <section id="help">
     <button class="close-btn" onclick="hideHelp()">×</button>
     <div class="container">
-      <h2>Help Center</h2>
-      <p>Need assistance using our site? Here are some tips:</p>
+      <h2>Help Section</h2>
+      <p>Here's how to use:</p>
       <ul>
-        <li><strong>Explore Artworks:</strong> Click “Filipino Historical & Cultural Artworks” to browse curated pieces.</li>
-        <li><strong>Filter by Category:</strong> Use “Categories” to explore different styles and subjects.</li>
-        <li><strong>Navigation:</strong> Use the top menu to return to the homepage or explore more.</li>
-        <li><strong>Support:</strong> For further help, contact us via social media or the upcoming contact form.</li>
+        <li>Click on the categories to view more artworks.</li>
+        <li>Use the nav bar to explore or go back to the homepage.</li>
+        <li>If something doesn't work, try refreshing the page.</li>
       </ul>
     </div>
   </section>
-
 
   <script>
     function goHome() {
@@ -208,9 +239,8 @@
     }
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

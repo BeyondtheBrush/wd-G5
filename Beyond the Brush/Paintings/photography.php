@@ -87,7 +87,17 @@
       <div class="h2 text-center p-2" style="color: white;">
         PHOTOGRAPHY
       </div>
-
+    <div class="container text-center my-5">
+    <h2 class="category-title">CATEGORIES</h2>
+    <div class="row justify-content-center mt-4">
+      <div class="col-12 col-md-4 mb-4">
+        <a href="Paintings/index.php" class="category-link">
+          <div class="category-card">
+            <img src="img/Paintings.jpg" class="img-fluid rounded" alt="Paintings">
+            <h5>Paintings</h5>
+          </div>
+        </a>
+      </div>
       <div class="col-12 col-md-4 mb-4">
         <div class="card h-100 text-center">
           <img src="../../img/photo1.jpg" class="card-img-top" alt="photo 1">
