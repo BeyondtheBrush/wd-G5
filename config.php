@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'art_gallery';
+$db   = 'paintings';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
