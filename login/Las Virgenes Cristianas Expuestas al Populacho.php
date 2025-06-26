@@ -46,7 +46,7 @@
           <p>
            Las Virgenes Cristianas Expuestas al Populacho or The Christian Virgins Exposed to the Populace is a famous 1884 history painting by Filipino painter, reformist, and propagandist Félix Resurrección Hidalgo
           </p>
-          <a href="index.php" class="btn btn-light btn-back">← Back to Gallery</a>
+          <a href="painting.php" class="btn btn-light btn-back">← Back to Gallery</a>
         </div>
       </div>
     </div>

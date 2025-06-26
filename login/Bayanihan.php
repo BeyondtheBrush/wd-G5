@@ -46,7 +46,7 @@
           <p>
           Bayanihan by Carlos “Botong” Francisco exemplifies one of the famous cultures in the Philippines which is Bayanihan that has a root word of “Bayani” which simply means “Hero”. With this, this painting shows a hero to one another. During early times, people would carry houses to change places to relocate a neighbor because of a natural calamity or simply to move places. According to Pinoy Art Hub (2018), this is done by gathering enough people from the same neighborhood to carry a Bahay Kubo or a nipa hut.
           </p>
-          <a href="index.php" class="btn btn-light btn-back">← Back to Gallery</a>
+          <a href="painting.php" class="btn btn-light btn-back">← Back to Gallery</a>
         </div>
       </div>
     </div>

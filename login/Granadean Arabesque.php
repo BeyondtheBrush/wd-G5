@@ -46,7 +46,7 @@
           <p>
            The “Granadean Arabesque,” is a staple of the Philippine art world, created by the well-known Filipino painter and Artist Jose Joya.
           </p>
-          <a href="index.php" class="btn btn-light btn-back">← Back to Gallery</a>
+          <a href="painting.php" class="btn btn-light btn-back">← Back to Gallery</a>
         </div>
       </div>
     </div>

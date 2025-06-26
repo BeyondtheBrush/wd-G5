@@ -46,7 +46,7 @@
           <p>
            The Spoliarium is a painting by Filipino painter Juan Luna. Luna, working on canvas, spent eight months completing the painting which depicts dying gladiators. The painting was submitted by Luna to the Exposición Nacional de Bellas Artes in 1884 in Madrid, where it garnered the first gold medal.
           </p>
-          <a href="index.php" class="btn btn-light btn-back">← Back to Gallery</a>
+          <a href="painting.php" class="btn btn-light btn-back">← Back to Gallery</a>
         </div>
       </div>
     </div>

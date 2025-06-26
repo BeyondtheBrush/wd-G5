@@ -46,7 +46,7 @@
           <p>
            The Blood Compact is an “historic and historical” painting by Filipino painter Juan Luna. The scene painted by the artist portrays the 1565 Sandugo (blood compact ritual) between Datu Sikatuna of Bohol and Miguel López de Legazpi, surrounded by other conquistadores. Datu Sikatuna was described to be ‘being crowded out of the picture by Miguel López de Legazpi and his fellow conquistadores’. This is one of the last paintings created by Luna.
           </p>
-          <a href="index.php" class="btn btn-light btn-back">← Back to Gallery</a>
+          <a href="painting.php" class="btn btn-light btn-back">← Back to Gallery</a>
         </div>
       </div>
     </div>

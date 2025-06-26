@@ -1,5 +1,3 @@
-<?php include('navbar.php'); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +9,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
 
   <div class="container py-5">
     <div class="row justify-content-center">
@@ -75,9 +71,10 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
+  <a href="dashboard.php" class="btn btn-light back-fixed">Back</a>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

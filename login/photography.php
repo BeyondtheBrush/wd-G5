@@ -1,4 +1,3 @@
-<?php include('navbar.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,26 +15,6 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
-}
-
-.navbar {
-    height: 70px;
-    background-color: rgba(2, 29, 55);
-    padding: 0 20px;
-    opacity: 0.50;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 1;
-}
-
-
-.navbar-brand:hover {
-    color: #cccccc;
 }
 
 .card {
@@ -62,7 +41,7 @@
 }
 
 .btn-view:hover {
-    background-color: #e0e0e0;
+    background-color:rgb(224, 224, 224);
     color: #000;
 }
 
@@ -136,9 +115,9 @@
           </div>
         </div>
       </div>
-
     </div> 
   </div> 
+    <a href="dashboard.php" class="btn btn-light back-fixed">Back</a>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

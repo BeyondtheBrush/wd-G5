@@ -46,7 +46,7 @@
           <p>
            "Planting Rice" is a famous oil painting by Filipino artist Fernando Amorsolo, known for his idyllic and realistic depictions of Philippine rural life. The painting typically features farmers, often working together, planting rice in a sun-drenched field, sometimes with Mount Mayon in the background.
           </p>
-          <a href="index.php" class="btn btn-light btn-back">← Back to Gallery</a>
+          <a href="painting.php" class="btn btn-light btn-back">← Back to Gallery</a>
         </div>
       </div>
     </div>

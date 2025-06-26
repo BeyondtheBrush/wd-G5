@@ -104,6 +104,7 @@ include('navbar.php');
     #about,
     #help {
       display: none;
+      position: relative; 
       padding: 70px 20px;
       background-color: rgba(0, 0, 0, 0.7);
       color: white;
