@@ -1,9 +1,9 @@
 <?php
 $pageTitle = "Beyond the Brush";
+include('navbar.php');
 ?>
-<!doctype html>
-<html lang="en">
 
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -145,25 +145,6 @@ $pageTitle = "Beyond the Brush";
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="logo home.png" alt="Logo" height="30">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" onclick="goHome()">Home</a></li>
-          <li class="nav-item"><a class="nav-link" onclick="showHelp()">Help</a></li>
-          <li class="nav-item"><a class="nav-link" onclick="showAbout()">About</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <div class="container container-content d-flex flex-column align-items-center justify-content-center text-center" id="home-section">
     <div>
       <h1>SIMPLY ART. SIMPLY BEAUTIFUL</h1>
@@ -178,13 +159,13 @@ $pageTitle = "Beyond the Brush";
   <section id="categories-section" style="margin-top: 80px;" class="d-flex flex-column align-items-center justify-content-center text-center py-5">
     <h2 class="mb-4" style="color: white; font-size: 2rem;">Categories</h2>
     <div class="d-flex flex-wrap justify-content-center gap-4">
-      <a href="photography.html" class="text-decoration-none">
+      <a href="photography.php" class="text-decoration-none">
         <div class="category-card">
           <img src="Photography.jpg" alt="Photography">
           <h5>Photography</h5>
         </div>
       </a>
-      <a href="paintings.html" class="text-decoration-none">
+      <a href="painting.php" class="text-decoration-none">
         <div class="category-card">
           <img src="Paintings.jpg" alt="Paintings">
           <h5>Paintings</h5>
