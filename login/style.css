@@ -1,6 +1,6 @@
 /* Background and body styling */
 body {
-  background-color: #03254c;
+  background-image: url('../img/bg2.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
