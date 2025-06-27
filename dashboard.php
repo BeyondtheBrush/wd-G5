@@ -117,7 +117,7 @@
         <a href="#" class="list-group-item">📊 Dashboard</a>
         <a href="#" class="list-group-item">🖌️ Manage Paintings</a>
         <a href="#" class="list-group-item">👥 Users</a>
-        <a href="#" class="list-group-item">🚪 Logout</a>
+        <a href="index.php" class="list-group-item">🚪 Logout</a>
       </div>
     </div>
 
