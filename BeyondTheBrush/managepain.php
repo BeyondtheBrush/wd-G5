@@ -120,7 +120,7 @@ $result = $conn->query($query);
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>#</th>
+            <th>Id</th>
             <th>Title</th>
             <th>Author</th>
             <th>Date</th>
