@@ -135,7 +135,7 @@ $result = $conn->query($query);
               echo "<th scope='row'>" . $count++ . "</th>";
               echo "<td>" . htmlspecialchars($row['paintingName']) . "</td>";
               echo "<td>" . htmlspecialchars($row['author']) . "</td>";
-              echo "<td>" . htmlspecialchars($row['date']) . "</td>";
+              echo "<td>" . htmlspecialchars($row['paintingDate']) . "</td>";
               echo "</tr>";
             }
           } else {
