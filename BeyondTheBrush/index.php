@@ -17,7 +17,7 @@ include('navbar.php');
     }
 
     body {
-      background: url('../img/bg\ home.jpg') no-repeat center center fixed;
+      background: url('../img/bg-art.jpg') no-repeat center center fixed;
       background-size: cover;
       font-family: Georgia, serif;
       margin: 0;
