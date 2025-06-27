@@ -122,7 +122,7 @@ $result = $conn->query($query);
           <tr>
             <th>Id</th>
             <th>Title</th>
-            <th>Author</th>
+            <th>Artists</th>
             <th>Date</th>
           </tr>
         </thead>
