@@ -1,8 +1,21 @@
 <?php
+$user = "admin";
+$pass = "admin123";
+$error = "";
 
-session_start();
-include("connect.php")
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = trim($_POST["username"] ?? '');
+    $password = trim($_POST["password"] ?? '');
+
+    if ($username == $user && $password == $pass) {
+        header("Location: dashboard.php");
+        exit();
+    } else {
+        $error = "Invalid username or password.";
+    }
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,7 +101,7 @@ include("connect.php")
 
   <div class="login-box">
     <h3><i class="bi bi-person-circle me-2"></i>Login</h3>
-    <form method="post">
+    <form method="POST" action="">
       <div class="mb-3">
         <label for="username" class="form-label">Username</label>
         <input type="text" class="form-control" id="username" name="username" required>
@@ -98,7 +111,7 @@ include("connect.php")
         <input type="password" class="form-control" id="password" name="password" required>
       </div>
       <div class="text-center mt-3">
-        <button type="submit" class="btn btn-primary shadow-sm" name="login">Login</button>
+        <button type="submit" class="btn btn-primary shadow-sm">Login</button>
       </div>
     </form>
   </div>

@@ -108,7 +108,7 @@
   </style>
 </head>
 <body>
-
+ 
   <div id="wrapper">
     
     <div id="sidebar-wrapper">
@@ -117,7 +117,7 @@
         <a href="#" class="list-group-item">📊 Dashboard</a>
         <a href="#" class="list-group-item">🖌️ Manage Paintings</a>
         <a href="#" class="list-group-item">👥 Users</a>
-        <a href="index.php" class="list-group-item">🚪 Logout</a>
+        <a href="#" class="list-group-item">🚪 Logout</a>
       </div>
     </div>
 
@@ -125,7 +125,7 @@
     <div id="page-content-wrapper">
       <nav class="navbar px-4">
         <div class="ms-auto">
-          <a href="index.php" class="logout-btn">Logout</a>
+          <a href="#" class="logout-btn">Logout</a>
         </div>
       </nav>
 
