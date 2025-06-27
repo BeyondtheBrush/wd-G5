@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spoliarium - Beyond the Brush</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"> <!-- Link to your custom CSS -->
+  <link rel="stylesheet" href="style.css"> 
   <style>
     body {
-      background-image: url('../img/bg-art.jpg'); /* Change this path if needed */
+      background-image: url('../img/bg-art.jpg'); 
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
