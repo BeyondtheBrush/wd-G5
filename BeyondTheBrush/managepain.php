@@ -122,8 +122,8 @@ $result = $conn->query($query);
           <tr>
             <th>#</th>
             <th>Title</th>
-            <th>Image Path</th>
-            <th>Link Page</th>
+            <th>Author</th>
+            <th>Date</th>
           </tr>
         </thead>
         <tbody>
@@ -133,9 +133,9 @@ $result = $conn->query($query);
             while ($row = $result->fetch_assoc()) {
               echo "<tr>";
               echo "<th scope='row'>" . $count++ . "</th>";
-              echo "<td>" . htmlspecialchars($row['title']) . "</td>";
-              echo "<td>" . htmlspecialchars($row['image_path']) . "</td>";
-              echo "<td>" . htmlspecialchars($row['link_page']) . "</td>";
+              echo "<td>" . htmlspecialchars($row['paintingName']) . "</td>";
+              echo "<td>" . htmlspecialchars($row['author']) . "</td>";
+              echo "<td>" . htmlspecialchars($row['date']) . "</td>";
               echo "</tr>";
             }
           } else {
