@@ -125,7 +125,7 @@
     <div id="page-content-wrapper">
       <nav class="navbar px-4">
         <div class="ms-auto">
-          <a href="#" class="logout-btn">Logout</a>
+          <a href="index.php" class="logout-btn">Logout</a>
         </div>
       </nav>
 
