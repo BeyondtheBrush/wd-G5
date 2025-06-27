@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admin Dashboard - Beyond the Brush</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+ <style>
     * {
       box-sizing: border-box;
     }
@@ -114,8 +114,8 @@
     <div id="sidebar-wrapper">
       <div class="sidebar-heading">🖼️ Painting Admin</div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item">📊 Dashboard</a>
-        <a href="managepain.php" class="list-group-item">🖌️ Manage Paintings</a>
+        <a href="dashboard.php" class="list-group-item">📊 Dashboard</a>
+        <a href="#" class="list-group-item">🖌️ Manage Paintings</a>
         <a href="index.php" class="list-group-item">🚪 Logout</a>
       </div>
     </div>
@@ -128,17 +128,7 @@
         </div>
       </nav>
 
-      <div class="container-fluid d-flex justify-content-center align-items-center">
-        <div class="welcome-card text-center">
-          <h2>Welcome, Admin</h2>
-          <p class="lead mt-3">Manage your gallery, users, and everything in between — all in one place.</p>
-          <hr class="my-4">
-          <p>Beyond the Brush empowers you to celebrate Filipino culture through powerful artworks. Dive in and keep the stories alive!</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
 </html>
